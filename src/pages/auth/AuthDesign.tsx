@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Tabs from '../../components/Tabs';
-import authDesign from '../../assets/auth_desgin_img.svg'
+import authDesign from '../../assets/Auth_desgin_img.svg'
 import logo from '../../assets/Logo_container.svg';
 import Login from './Login';
 import AuthFooter from '../AuthFooter';
