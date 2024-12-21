@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../../assets/Logo_container.svg';
-import lock from '../../../assets/lock.svg';
-import authDesign from '../../../assets/lock.svg'; 
+import lock from '../../../assets/Lock.svg';
+import authDesign from '../../../assets/Lock.svg'; 
 import AuthFormSidebar from '../AuthFormSidebar';
 import PasswordForgot from './PasswordForgot';
 import OTPIndex from './OTPIndex';
