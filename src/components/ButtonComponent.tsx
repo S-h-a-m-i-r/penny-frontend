@@ -1,19 +1,22 @@
+import { CSSProperties } from 'react';
 
 interface ButtonProps {
-  icon: string;
-  title: string;
+	icon?: string;
+	title: string;
+	styles: CSSProperties;
 }
 
 const ButtonComponent = (props: ButtonProps) => {
-  return (
-    <button
-    type="button"
-    className="flex items-center justify-center gap-2 w-full border border-gray-300 text-white font-sans font-normal py-2 px-4 rounded-md bg-transparent mt-2"
-  >
-    <img src={props.icon} alt={props.title} className="w-5 h-5" />  
-    {props.title}
-  </button>
-  )
-}
+	return (
+		<button
+			type="button"
+			className="flex items-center justify-center gap-2 w-full border border-gray-300 text-white font-sans font-normal py-2 px-4 rounded-md bg-transparent mt-2"
+      style={{ ...props.styles }} 
+    >
+			{props.icon && <img src={props.icon} alt={props.title} className="w-5 h-5" />}
+			{props.title}
+		</button>
+	);
+};
 
-export default ButtonComponent
+export default ButtonComponent;

@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors }, clearErrors } = useForm<FormData>();
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate()
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -19,6 +19,7 @@ const Login = () => {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
+    navigate('/')
   };
 
 

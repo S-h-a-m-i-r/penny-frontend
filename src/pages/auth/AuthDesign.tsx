@@ -4,7 +4,7 @@ import Tabs from '../../components/Tabs';
 import authDesign from '../../assets/Auth_desgin_img.svg'
 import logo from '../../assets/Logo_container.svg';
 import Login from './Login';
-import AuthFooter from '../AuthFooter';
+import AuthFooter from '../../components/AuthFooter';
 import Signup from './Signup';
 import AuthFormSidebar from './AuthFormSidebar';
 

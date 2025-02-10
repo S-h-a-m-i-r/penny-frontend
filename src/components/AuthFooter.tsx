@@ -1,4 +1,4 @@
-import ButtonComponent from '../components/ButtonComponent'
+import ButtonComponent from './ButtonComponent'
 import gIcon from '../assets/Google_icon.svg';
 import facebookIcon from '../assets/Facebook_icon.svg'
 
