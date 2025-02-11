@@ -3,7 +3,7 @@ import { CSSProperties } from 'react';
 interface ButtonProps {
 	icon?: string;
 	title: string;
-	styles: CSSProperties;
+	styles?: CSSProperties;
 }
 
 const ButtonComponent = (props: ButtonProps) => {

@@ -1,13 +1,11 @@
-import { createContext, useContext, ReactNode } from 'react';
-
 // Define the shape of the context
 
 
 // Create the AuthContext
-const AuthContext = createContext(undefined);
+// const AuthContext = createContext(undefined);
 
 // AuthProvider component
-export const AuthProvider = ({ children }: { children: ReactNode }) => {
+export const AuthProvider = () => {
   // const { user, isAuthenticatedUser: isAuthenticated } = useSelector(
   //   (state: RootState) => state.auth
   // );
