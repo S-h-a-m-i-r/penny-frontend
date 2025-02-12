@@ -112,25 +112,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-const styles = {
-  loginStyles: {
-    width: '8.625rem',
-    backgroundColor: 'transparent',
-    border: '1px solid white',
-    borderRadius: '2.07rem',
-    height: '3.75rem',
-    padding: '0px'
-  },
-  signupStyles: {
-    width: '8.625rem',
-    backgroundColor: '#85BB65',
-    border: 'none',
-    borderRadius: '2.07rem',
-    height: '3.75rem',
-    color: 'black',
-    fontWeight: '550'
-
-  }
-}

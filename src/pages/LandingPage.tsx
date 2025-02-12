@@ -9,7 +9,6 @@ import InvestmentIcon from '../assets/icons/InvestmentIcon';
 import InvestmentAllocationSection from '../assets/InvestmentAllocationSection.png';
 import SecurityIcon from '../assets/icons/SecurityIcon';
 import ChatBubbles from '../assets/L-Chat Bubbles.png';
-import Footer from '../components/Footer'
 
 const LandingPage = () => {
 	return (
