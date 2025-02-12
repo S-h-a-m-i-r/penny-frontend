@@ -1,17 +1,18 @@
-import { CSSProperties } from 'react';
-
+import { twMerge } from "tailwind-merge";
 interface ButtonProps {
 	icon?: string;
 	title: string;
-	styles?: CSSProperties;
+  styles?: string;
 }
 
 const ButtonComponent = (props: ButtonProps) => {
 	return (
 		<button
-			type="button"
-			className="flex items-center justify-center gap-2 w-full border border-gray-300 text-white font-sans font-normal py-2 px-4 rounded-md bg-transparent mt-2"
-      style={{ ...props.styles }} 
+      type="button"
+      className={twMerge(
+        "flex cursor-pointer items-center justify-center gap-2 w-full border border-gray-300 text-white font-sans font-normal py-2 px-4 mt-2",
+        props.styles
+      )}
     >
 			{props.icon && <img src={props.icon} alt={props.title} className="w-5 h-5" />}
 			{props.title}

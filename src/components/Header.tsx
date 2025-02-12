@@ -85,8 +85,9 @@ const Header = () => {
       </NavLink>
     </nav>
         <div className="hidden md:flex space-x-4">
-        <ButtonComponent title='Login' styles={styles.loginStyles} /> 
-        <ButtonComponent title='Sign Up' styles={styles.signupStyles} /> 
+        <ButtonComponent title='Login' styles="w-[8.625rem] h-[3.75rem] aspect-square border border-white rounded-[2.07rem] 
+       cursor-pointer hover:drop-shadow-lg hover:shadow-[#85BB65] p-0 bg-transparent" /> 
+        <ButtonComponent title='Sign Up' styles='w-[8.625rem] h-[3.75rem] p-0 border border-[#85BB65] bg-[#85BB65] cursor-pointer rounded-[2.07rem] hover:drop-shadow-lg hover:shadow-[#85BB65]' /> 
         </div>
 
         {/* Mobile Menu Button */}
@@ -102,8 +103,8 @@ const Header = () => {
           <a href="#" className="block py-2">About Us</a>
           <a href="#" className="block py-2">How It Works</a>
           <a href="#" className="block py-2">Contact Us</a>
-          <ButtonComponent title='Login' styles={styles.loginStyles} /> 
-          <ButtonComponent title='Sign Up' styles={styles.signupStyles} /> 
+          <ButtonComponent title='Login' styles='w-[8.625rem] h-[3.75rem] p-0 border border-white bg-transparent rounded-[2.07rem]' /> 
+          <ButtonComponent title='Sign Up' styles='w-[8.625rem] h-[3.75rem] p-0 border border-white bg-transparent rounded-[2.07rem]' /> 
         </nav>
       )}
     </header>
@@ -111,25 +112,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-const styles = {
-  loginStyles: {
-    width: '8.625rem',
-    backgroundColor: 'transparent',
-    border: '1px solid white',
-    borderRadius: '2.07rem',
-    height: '3.75rem',
-    padding: '0px'
-  },
-  signupStyles: {
-    width: '8.625rem',
-    backgroundColor: '#85BB65',
-    border: 'none',
-    borderRadius: '2.07rem',
-    height: '3.75rem',
-    color: 'black',
-    fontWeight: '550'
-
-  }
-}
