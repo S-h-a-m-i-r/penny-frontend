@@ -8,7 +8,7 @@ const Layout = () => {
 				<main className="flex justify-between">
 					<Outlet />
 				</main>
-			</div>
+      </div>
 		</>
 	);
 };
